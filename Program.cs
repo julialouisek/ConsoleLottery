@@ -4,7 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
         }
+
+        static int CheckResult()
+        {
+            int winningNumbersAmount = 0;
+
+
+            if (Tant har köpt lott == rasmus)
+            {
+                winningNumbersAmount++;
+                
+            }
+            return winningNumbersAmount;
+        }
+
+
     }
 }
