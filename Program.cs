@@ -4,22 +4,33 @@
     {
         static void Main(string[] args)
         {
-
+            
         }
 
-        static int CheckResult()
+
+        static bool CheckResult(int ticket, int[] winningNumbers)
         {
-            int winningNumbersAmount = 0;
-
-
-            if (Tant har köpt lott == rasmus)
+            foreach (int number in winningNumbers)
             {
-                winningNumbersAmount++;
-                
+                if (ticket == number)
+                {
+                    return true;
+                }
             }
-            return winningNumbersAmount;
+            return false;
         }
 
-
+        static int CheckEveryNumber(int[] tickets, int[] winningNumbers)
+        {
+            int amount = 0;
+            foreach (int ticket in tickets)
+            {
+                if (CheckResult(ticket, winningNumbers))
+                {
+                    amount++;
+                }
+            }
+            return amount;
+        }
     }
 }
